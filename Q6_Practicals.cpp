@@ -52,7 +52,7 @@ public:
         return !(*this == other);
     }
 //Syed Taha Rizvi(23BCE10981) has concluded his part.
-//This part includes Sumit Prajapati (23BCE11758) contribution to the code:
+//This part includes Sumit Prajapati (23BCE10122) contribution to the code:
 // Conversion to int: days elapsed in the current year
     operator int() const {
         int totalDays = day;
@@ -67,6 +67,6 @@ public:
         cout << day << "/" << month << "/" << year << endl;
     }
 };
-//Sumit Prajapati (23BCE11758) has concluded his part.
+//Sumit Prajapati (23BCE10122) has concluded his part.
 
 
