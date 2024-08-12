@@ -28,3 +28,13 @@ public:
         return find(elements.begin(), elements.end(), element) != elements.end();
     }
 //Syed Taha Rizvi(23BCE10981) has concluded his part.
+//This part includes Vartika vashishtha(23BCE11137) contribution to the code:
+// Function to find the average of the elements in the Vector
+    double findAverage() const {
+        if (elements.empty()) {
+            throw runtime_error("Vector is empty.");
+        }
+        T sum = accumulate(elements.begin(), elements.end(), T(0));
+        return static_cast<double>(sum) / elements.size();
+    }
+//Vartika Vashishtha(23BCE11137) has concluded her part.
