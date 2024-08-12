@@ -55,3 +55,12 @@ void printBooks(const vector<Book>& books) {
     }
 }
 //Vartika Vasishtha (23BCE11137) has concluded her part.
+
+//This part includes Sumit Prajapati(23BCE10122) contribution to the code:
+// Comparator function to sort books by author name
+bool compareAuthor(const Book& a, const Book& b) {
+    return a.author < b.author;
+}
+
+
+//Sumit Prajapati (23BCE10122)has concluded her part.
