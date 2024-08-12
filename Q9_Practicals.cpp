@@ -14,8 +14,8 @@ T findLargest(T a, T b, T c) {
         max = b;
     }
 //Syed Taha Rizvi(23BCE10981) has concluded his part.
-This part includes Vartika Vashishtha (23BCE11137) contribution to the code:
-if (c > max) {
+//This part includes Vartika Vashishtha (23BCE11137) contribution to the code:
+    if (c > max) {
         max = c;
     }
 
