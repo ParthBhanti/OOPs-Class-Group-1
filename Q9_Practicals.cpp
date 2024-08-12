@@ -14,8 +14,7 @@ T findLargest(T a, T b, T c) {
         max = b;
     }
 //Syed Taha Rizvi(23BCE10981) has concluded his part.
-
-//This part includes Vartika Vashishtha (23BCE11137) contribution to the code:
+This part includes Vartika Vashishtha (23BCE11137) contribution to the code:
 if (c > max) {
         max = c;
     }
@@ -23,3 +22,14 @@ if (c > max) {
     return max;
 }
 //Vartika Vashishtha (23BCE11137) has concluded her part.
+
+//This part includes Sumit Prajapati (23BCE10122) contribution to the code:
+
+int main() {
+    int a = 5, b = 9, c = 3;
+    cout << "Largest of " << a << ", " << b << ", and " << c << " is: " << findLargest(a, b, c) << endl;
+
+    double x = 5.5, y = 9.9, z = 3.3;
+    cout << "Largest of " << x << ", " << y << ", and " << z << " is: " << findLargest(x, y, z) << endl;
+
+//Sumit Prajapati (23BCE10122) has concluded her part.
