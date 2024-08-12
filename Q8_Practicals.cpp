@@ -52,4 +52,34 @@ public:
 
 // Sumit Prajapati(23BCE10122) has concluded her part.
 
+//This part includes Naman Dhakad(23BCE11359) contribution to the code:
+int main() {
+    vector<int> intVector = {3, 8, 1, 6, 9, 4};
+    Vector<int> intVec(intVector);
 
+    cout << "Elements in the integer Vector: ";
+    intVec.display();
+
+    cout << "Smallest element: " << intVec.findSmallest() << endl;
+
+    int searchValue = 6;
+    cout << "Is " << searchValue << " in the Vector? " << (intVec.searchElement(searchValue) ? "Yes" : "No") << endl;
+
+    cout << "Average of elements: " << intVec.findAverage() << endl;
+
+    vector<double> doubleVector = {2.5, 7.1, 3.3, 5.9, 8.0};
+    Vector<double> doubleVec(doubleVector);
+
+    cout << "\nElements in the double Vector: ";
+    doubleVec.display();
+
+    cout << "Smallest element: " << doubleVec.findSmallest() << endl;
+
+    double searchDouble = 3.3;
+    cout << "Is " << searchDouble << " in the Vector? " << (doubleVec.searchElement(searchDouble) ? "Yes" : "No") << endl;
+
+    cout << "Average of elements: " << doubleVec.findAverage() << endl;
+
+    return 0;
+}
+// Naman Dhakad(23BCE11359) has concluded his part.
