@@ -19,7 +19,7 @@ private:
             default: return 31;
         }
     }
-//Parth Bhanti's(23BCE11758) has concluded his part.
+//Parth Bhanti(23BCE11758) has concluded his part.
 //This part includes Syed Taha Rizvi's(23BCE10981) contribution to the code:
 public:
     Date(int d = 1, int m = 1, int y = 2000) : day(d), month(m), year(y) {}
