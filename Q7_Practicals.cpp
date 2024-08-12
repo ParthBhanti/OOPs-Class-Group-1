@@ -82,4 +82,4 @@ int main() {
 
     return 0;
 }
-//Naman Dhakad(23BCE11359) has concluded her part.
+//Naman Dhakad(23BCE11359) has concluded his part.
