@@ -100,5 +100,31 @@ public:
     }
 };
 //Sumit Prajapati (23BCE10122) has concluded his part.
+//This part includes Naman Dhakad(23BCE11359) contribution to the code:
+int main() {
+    Date dt(31, 12, 2023);
 
+    cout << "Date: ";
+    dt.display();
+
+    // Increment date by one day
+    ++dt;
+    cout << "Date after incrementing by one day: ";
+    dt.display();
+
+    // Add 10 days
+    Date dt2 = dt + 10;
+    cout << "Date after adding 10 days: ";
+    dt2.display();
+
+    // Compare dates
+    cout << "Is dt2 > dt? " << (dt2 > dt) << endl;
+
+    // Conversion to int
+    int daysElapsed = dt2;
+    cout << "Days elapsed in the year for dt2: " << daysElapsed << endl;
+
+    return 0;
+}
+//Naman Dhakad(23BCE11359) has concluded his part.
 
