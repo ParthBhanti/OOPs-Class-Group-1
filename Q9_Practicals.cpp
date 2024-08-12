@@ -33,3 +33,11 @@ int main() {
     cout << "Largest of " << x << ", " << y << ", and " << z << " is: " << findLargest(x, y, z) << endl;
 
 //Sumit Prajapati (23BCE10122) has concluded her part.
+
+//This part includes Naman Dhakad(23BCE11359) contribution to the code:
+float p = 4.2f, q = 4.2f, r = 7.1f;
+    cout << "Largest of " << p << ", " << q << ", and " << r << " is: " << findLargest(p, q, r) << endl;
+
+    return 0;
+}
+//Naman Dhakad(23BCE11359) has concluded his part.
