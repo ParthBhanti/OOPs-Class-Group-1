@@ -41,3 +41,17 @@ vector<Book> readBooks(int n) {
     return books;
 }
 //Syed Taha Rizvi(23BCE10981) has concluded his part.
+//This part includes Vartika Vasishtha(23BCE11137) contribution to the code:
+// Function to print sorted book details to standard output
+void printBooks(const vector<Book>& books) {
+    for (const auto& book : books) {
+        cout << "Book ID: " << book.id << endl;
+        cout << "Author: " << book.author << endl;
+        cout << "Price: " << book.price << endl;
+        cout << "Number of Pages: " << book.pages << endl;
+        cout << "Publisher: " << book.publisher << endl;
+        cout << "Year of Publishing: " << book.year << endl;
+        cout << endl;
+    }
+}
+//Vartika Vasishtha (23BCE11137) has concluded her part.
