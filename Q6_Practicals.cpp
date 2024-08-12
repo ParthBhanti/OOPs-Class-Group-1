@@ -52,6 +52,7 @@ public:
         return !(*this == other);
     }
 //Syed Taha Rizvi(23BCE10981) has concluded his part.
+//This part includes Sumit Prajapati (23BCE11758) contribution to the code:
 // Conversion to int: days elapsed in the current year
     operator int() const {
         int totalDays = day;
