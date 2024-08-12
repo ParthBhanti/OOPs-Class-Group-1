@@ -52,3 +52,20 @@ public:
         return !(*this == other);
     }
 //Syed Taha Rizvi(23BCE10981) has concluded his part.
+// Conversion to int: days elapsed in the current year
+    operator int() const {
+        int totalDays = day;
+        for (int i = 1; i < month; i++) {
+            totalDays += daysInMonth(i, year);
+        }
+        return totalDays;
+    }
+
+    // Function to display the date
+    void display() const {
+        cout << day << "/" << month << "/" << year << endl;
+    }
+};
+
+
+
