@@ -22,3 +22,9 @@ public:
         return *min_element(elements.begin(), elements.end());
     }
 //Parth Bhanti(23BCE11758) has concluded his part.
+//This part includes Syed Taha Rizvi's(23BCE10981) contribution to the code:
+// Function to search for an element in the Vector
+    bool searchElement(const T& element) const {
+        return find(elements.begin(), elements.end(), element) != elements.end();
+    }
+//Syed Taha Rizvi(23BCE10981) has concluded his part.
