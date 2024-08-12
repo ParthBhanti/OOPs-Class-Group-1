@@ -64,3 +64,22 @@ bool compareAuthor(const Book& a, const Book& b) {
 
 
 //Sumit Prajapati (23BCE10122)has concluded her part.
+//This part includes Naman Dhakad(23BCE11359) contribution to the code:
+int main() {
+    int n;
+    cout << "Enter the number of books: ";
+    cin >> n;
+
+    // Read books from standard input
+    vector<Book> books = readBooks(n);
+
+    // Sort books by author name
+    sort(books.begin(), books.end(), compareAuthor);
+
+    // Print sorted books to standard output
+    cout << "Books sorted by author name:\n";
+    printBooks(books);
+
+    return 0;
+}
+//Naman Dhakad(23BCE11359) has concluded her part.
