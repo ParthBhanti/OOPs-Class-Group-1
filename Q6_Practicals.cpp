@@ -52,6 +52,38 @@ public:
         return !(*this == other);
     }
 //Syed Taha Rizvi(23BCE10981) has concluded his part.
+//This part includes vartika vashishtha (23BCE11137) contribution to the code:
+// Overload ++ to increment by one day
+    Date& operator++() {
+        day++;
+        if (day > daysInMonth(month, year)) {
+            day = 1;
+            month++;
+            if (month > 12) {
+                month = 1;
+                year++;
+            }
+        }
+        return *this;
+    }
+
+    // Overload + to add days to the current date
+    Date operator+(int days) const {
+        Date temp = *this;
+        temp.day += days;
+
+        while (temp.day > temp.daysInMonth(temp.month, temp.year)) {
+            temp.day -= temp.daysInMonth(temp.month, temp.year);
+            temp.month++;
+            if (temp.month > 12) {
+                temp.month = 1;
+                temp.year++;
+            }
+        }
+
+        return temp;
+    }
+//vartika vashishtha (23BCE11137) has concluded her part.
 //This part includes Sumit Prajapati (23BCE10122) contribution to the code:
 // Conversion to int: days elapsed in the current year
     operator int() const {
