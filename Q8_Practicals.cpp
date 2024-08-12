@@ -38,3 +38,18 @@ public:
         return static_cast<double>(sum) / elements.size();
     }
 //Vartika Vashishtha(23BCE11137) has concluded her part.
+
+
+//This part includes Sumit Prajapati(23BCE10122) contribution to the code:
+// Function to display the elements of the Vector
+    void display() const {
+        for (const T& elem : elements) {
+            cout << elem << " ";
+        }
+        cout << endl;
+    }
+};
+
+// Sumit Prajapati(23BCE10122) has concluded her part.
+
+
