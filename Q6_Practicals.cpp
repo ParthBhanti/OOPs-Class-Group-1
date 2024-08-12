@@ -20,3 +20,35 @@ private:
         }
     }
 //Parth Bhanti's(23BCE11758) has concluded his part.
+//This part includes Syed Taha Rizvi's(23BCE10981) contribution to the code:
+public:
+    Date(int d = 1, int m = 1, int y = 2000) : day(d), month(m), year(y) {}
+
+    // Relational operators
+    bool operator<(const Date &other) const {
+        if (year < other.year) return true;
+        if (year == other.year && month < other.month) return true;
+        if (year == other.year && month == other.month && day < other.day) return true;
+        return false;
+    }
+
+    bool operator<=(const Date &other) const {
+        return *this < other || *this == other;
+    }
+
+    bool operator>(const Date &other) const {
+        return !(*this <= other);
+    }
+
+    bool operator>=(const Date &other) const {
+        return !(*this < other);
+    }
+
+    bool operator==(const Date &other) const {
+        return year == other.year && month == other.month && day == other.day;
+    }
+
+    bool operator!=(const Date &other) const {
+        return !(*this == other);
+    }
+//Syed Taha Rizvi(23BCE10981) has concluded his part.
